@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       table{
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: greenyellow;
+        }
+
+        th,td{
+            border: 2px solid blue;
+            padding:15px
+        }
+
+        td{
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            color: brown;
+            background-color: aqua;
+        }
+
+        th:hover{
+background-color: darkkhaki;
+        }
+
+        fieldset{
+            text-align: center;
+            width:500px ;
+            background-color: aquamarine;
+        }
+
+        .submit{
+            background-color: greenyellow;
+            margin: 0;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Orderd list-->
+ <ol type="A">
+      <li>Bread</li>
+      <li>Chai</li>
+      <li>Notebooks</li>
+      <li>Laptop</li>
+    </ol>
+
+    <ul style="list-style-type:square">
+      <li>Bread</li>
+      <li>Chai</li>
+      <li>Notebooks</li>
+      <li>Laptop</li>
+    </ul>
+    </ol>
+
+    
+<!--
+<video width="300px" height="300px" controls autoplay muted loop >
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4"/> 
+    </video>
+
+   
+    <video controls width="400px" height="400px"  >
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4"/> 
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.ogg" type="video/ogg"/> 
+    </video>
+
+    <audio controls loop>
+      <source src="./a1.mp3" type="audio/mp3"/>
+      <source src="./a1.mpeg" type="audio/mpeg"/>
+    </audio>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Roll No</th>
+        </tr>
+
+        <tr>
+            <td>Sibi</td>
+            <td>21</td>
+            <td>121</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td colspan="2">30</td>
+            
+        </tr>
+    </table>
+-->
+
+ <!--   <table>
+   <thead>
+    <tr>
+    <th>Time</th>
+    <th rowspan="2">10</th>
+    <th rowspan="2">11</th>
+    <th rowspan="2">12</th>
+    <th rowspan="2">1</th>
+    <th rowspan="2">2</th>
+    <th rowspan="2">3</th>
+    </tr>
+    <tr>
+        <th>Day</th>
+    </tr> 
+   </thead>
+
+   <tbody>
+    <tr>
+    <td>Mon</td>
+    <td>Science</td>
+    <td>GK</td>
+    <td>CS</td>
+    <td>Maths</td>
+    <td>English</td>
+    <td>Python</td>
+
+
+    </tr>
+
+    <tr>
+        <td>Tue</td>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Python</td>
+        <td>GK</td>
+        <td>CS</td>
+
+    
+    
+        </tr>
+
+        <tr>
+            <td>Wed</td>
+            <td>CS</td>
+            <td>Maths</td>
+            <td>Python</td>
+            <td>GK</td>
+            <td>Science</td>
+            <td>CS</td>
+        
+        
+            </tr>
+
+            <tr>
+                <td>Thu</td>
+                <td>Python</td>
+                <td>GK</td>
+                <td>Maths</td>
+                <td>CS</td>
+                <td>Science</td>
+                <td>English</td>
+               
+            
+            
+                </tr>
+
+                <tr>
+                    <td>Fri</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>GK</td>
+                    <td>English</td>
+                    <td>CS</td>
+                    <td>Python</td>
+                  
+                
+                
+                    </tr>
+
+
+   </tbody>
+</table> -->
+
+<table>
+
+<form method="post">
+
+    <fieldset>
+        <th><label for="name">Name :</label></th>
+        <Input type="text" name="name">
+            <br>
+            <br>
+        
+        <label for="age">Age :</label>
+        <input type="number" name="age">
+        <br>
+        <br>
+
+        <label for="email">E-mail :</label>
+        <input type="email" name="email">
+        <br>
+        <br>
+
+        <label for="Telephone">Telephone :</label>
+        <input type="tel" name="Telephone"> 
+        <br>
+        <br>
+
+        <label for="password">Password :</label>
+        <input type="password" name="password">
+        <br>
+        <br>
+
+        <label for="cfrm-pass">Confirm Password :</label>
+        <input type="password" name="password">
+        <br>
+        <br>
+
+        <label for="Gender">Gender :</label>
+
+        <input type="radio" id="male" name="Gender">
+        <label for="male">Male</label>
+        &nbsp;
+
+        <input type="radio" id="female" name="Gender">
+        <label for="female">Female</label>
+        &nbsp;
+
+        <input type="radio" id="others" name="Gender">
+        <label for="others">Others</label>
+
+        <br>
+        <br>
+
+        <label for="working">Are You Working :</label>
+        <input type="radio" id="yes" name="working">
+        <label for="yes">Yes</label>
+        &nbsp;
+
+        <input type="radio" id="No" name="working">
+        <label for="No">No</label>
+
+        <br>
+        <br>
+        
+        <label for="submit"></label>
+        <input class="submit" type="submit" value="submit">
+    </fieldset>
+
+</form>
+
+</table>
+</body>
+</html>

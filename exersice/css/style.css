@@ -1,0 +1,52 @@
+body {
+  font: 1.2rem Helvetica, sans-serif;
+  color: green;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: orange;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  justify-content: center;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: cadetblue;
+  font: Helvetica, sans-serif;
+}
+
+.canvas {
+  background: aqua;
+  color: red;
+  width: 700px;
+  height: 800px;
+}
+
+article div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

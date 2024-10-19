@@ -1,0 +1,85 @@
+@mixin theme($theme: aqua, $color:red, $wid:700px, $hgt:800px) {
+    background: $theme;
+    color:$color;
+    width: $wid;
+    height:$hgt;
+  }
+
+
+$font-stack:Helvetica, sans-serif ;
+$primary-color: green;
+$mar-ul:15rem;
+
+
+body {
+  font:1.2rem $font-stack;
+  color: $primary-color;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: orange;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-left: $mar-ul;
+      margin-right:$mar-ul;     
+      display: flex;
+      flex-direction: row;
+      background-color:$primary-color ;
+      justify-content: center;
+      border-radius: 20px;
+      flex-wrap: wrap;
+    }
+  
+    li { display: inline-block; }
+  
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      color:cadetblue;
+      font: $font-stack;
+    }
+  }
+
+  // .nav-bg{
+  //   width:700px;
+  //   display: flex;
+  //   justify-content: center;
+  //   background-color:$primary-color ;
+  
+  // }
+
+  .canvas{
+    @include theme
+  }
+
+  // .svg{
+  //   @include theme
+  // }
+
+  // .html{
+  //   @include theme
+  // }
+  
+  article {
+    div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+

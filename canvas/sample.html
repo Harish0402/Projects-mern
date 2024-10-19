@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+
+    
+</head>
+<body>
+
+    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <ellipse rx="100" ry="60" cy="100" cx="100" fill="orange"/>
+        <ellipse rx="80" ry="40" cy="100" cx="100" fill="orange"/>
+
+        <ellipse cx="240" cy="50" rx="220" ry="30" fill="yellow" />
+        <ellipse cx="220" cy="50" rx="190" ry="20" fill="white" />
+    </svg> 
+    <svg width="300px" height="400px" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" cx="30" cy="40" r="20" stroke="red" stroke-width="4px" fill="blue" />
+     </svg>
+     <button onClick="increase()">Radius ++</button>
+     <button onClick="decrease()">Radius --</button>
+
+    <script>
+      function increase(){
+            var prev_rad = parseInt(c.getAttribute('cx')) 
+            //  TODO : Update the code make into int
+                            // "20" + 5 = 205px -> "205" + 5 -> 2055
+                            // 20 + 5 => 25  
+            var update_rad = prev_rad + 5
+            c.setAttribute('cx',update_rad)
+
+        }
+
+        function decrease(){
+
+var prev_rad = parseInt(c.getAttribute('cx')) 
+//  TODO : Update the code make into int
+                // "20" + 5 = 205px -> "205" + 5 -> 2055
+                // 20 + 5 => 25  
+var update_rad = prev_rad - 5
+c.setAttribute('cx',update_rad)
+}
+
+    </Script>
+
+</body>
+</html>
